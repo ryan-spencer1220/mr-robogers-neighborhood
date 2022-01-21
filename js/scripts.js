@@ -1,14 +1,13 @@
 // Business Logic
 function robogerReturn(num) {
   let numberArray = Array.from(num.toString()).map(Number);
-  for (let i = 0; i < num.length; i++) {
-    if (num === "1") {
-      numberArray.push("Beep!");
-      return numberArray;
-    } else {
-      return numberArray;
+  let robotArray = [];
+  numberArray.forEach(function (num) {
+    if (num === 1) {
+      robotArray.push("Beep!");
     }
-  }
+    console.log(robotArray);
+  });
 }
 
 console.log(robogerReturn(123456));
