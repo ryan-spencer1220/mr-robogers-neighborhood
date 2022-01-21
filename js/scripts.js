@@ -5,23 +5,27 @@ function beepBoop(num) {
   if (numberArray.includes(3)) {
     return "Won't you be my neighbor?";
   } else if (numberArray.includes(2)) {
-    return "Boop";
+    return "Boop!";
   } else if (numberArray.includes(1)) {
     return "Beep!";
   } else if (!numberArray.includes(1, 2, 3))
-    for (let i = 0; i < num + 1; i++) {
+    for (let i = 0; i <= num; i++) {
       if (i === 1) {
-        robotArray.push("Beep!");
+        robotArray.push("Beep!, ");
       } else if (i === 2) {
-        robotArray.push("Boop!");
+        robotArray.push("Boop!, ");
       } else if (i === 3) {
-        robotArray.push("Won't you be my neighbor?");
+        robotArray.push("Won't you be my neighbor?, ");
+      } else if (i < num) {
+        robotArray.push(i + ", ");
       } else {
         robotArray.push(i);
       }
     }
   return robotArray;
 }
+
+console.log(beepBoop(5));
 
 // UI Logic
 $(document).ready(function () {
