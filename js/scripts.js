@@ -23,19 +23,13 @@ function beepBoop(num) {
   return robotArray;
 }
 
-console.log(beepBoop(321));
-
 // UI Logic
-
-// if (num === 1) {
-//     return "Beep!";
-//   } else {
-//     return num;
-//   }
-
-// numberArray.forEach(function (num) {
-// if (numberArray.includes(1)) {
-//     robotArray.splice("Beep!");
-//   }
-//   console.log(robotArray);
-// });
+$(document).ready(function () {
+  $("form").submit(function (event) {
+    event.preventDefault();
+    const num = $("#number").val();
+    const beepBoopMessage = beepBoop(num);
+    $("#original-number").html(num);
+    $("#beep-boop-message").html(beepBoopMessage);
+  });
+});
