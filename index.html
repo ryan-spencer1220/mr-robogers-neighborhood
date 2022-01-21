@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
     <title>Mr Roboger's Neighborhood</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/scripts.js"></script>
   </head>
@@ -22,6 +20,11 @@
       </div>
       <form>
         <div class="form-group">
+          <div class="name-input">
+            <label for="name"><h4>What's Your Name?</h4></label>
+            <input id="name" class="form-control" type="text" />
+          </div>
+          <br />
           <h4>Input a number!</h4>
           <input type="number" id="number" name="number" class="form-control" />
           <br />
@@ -29,7 +32,10 @@
         </div>
       </form>
       <p>Your Original Number: <span id="original-number"></span></p>
-      <p>Your Message: <span id="beep-boop-message"></span></p>
+      <p>
+        Your Message:
+        <span id="beep-boop-message"></span>
+      </p>
     </div>
   </body>
 </html>

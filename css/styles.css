@@ -11,5 +11,8 @@ button {
 }
 
 h1 {
-  font-family: "Roboto";
+  font-family: "Hind", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 75px;
 }

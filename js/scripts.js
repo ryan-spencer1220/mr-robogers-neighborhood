@@ -4,8 +4,9 @@ function beepBoop(num) {
   let robotArray = [];
   for (let i = 0; i <= num; i++) {
     const index = i.toString();
+    const name = $("input#name").val();
     if (index.includes(3)) {
-      robotArray.push(`"Won't you be my neighbor?"`);
+      robotArray.push(`"Won't you be my neighbor ` + name + `?"`);
     } else if (index.includes(2)) {
       robotArray.push('"Boop!"');
     } else if (index.includes(1)) {
