@@ -12,7 +12,7 @@
 
 ## Description
 
-_This exercise was designed to showcase the ability to return a given array based on established specifications of user input._
+_This exercise was designed to showcase the importance of loops in programming. Users are prompted to enter a number which will return a message upon submission. The content of the message will be altered based on the number entered by the user._
 
 ## Setup/Installation Requirements
 
