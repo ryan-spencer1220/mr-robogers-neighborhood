@@ -1,6 +1,5 @@
 // Business Logic
 function beepBoop(num) {
-  let numberArray = Array.from(num.toString()).map(Number);
   let robotArray = [];
   for (let i = 0; i <= num; i++) {
     const index = i.toString();
